@@ -24,7 +24,8 @@ import { zip } from './gulp/tasks/zip.js';
 import { ftp } from './gulp/tasks/ftp.js';
 
 function watcher() {
-    //gulp.watch(path.watch.html, gulp.series(html, ftp));
+    // Autodeploy
+    // gulp.watch(path.watch.html, gulp.series(html, ftp));
 
     gulp.watch(path.watch.files, copy);
     gulp.watch(path.watch.html, html);
